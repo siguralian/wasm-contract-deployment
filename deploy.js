@@ -31,6 +31,7 @@ try {
   
   
   // adding fire account for paying the gas fee
+  const PHRASE = 'input the mnemonic phrase of the wallet having some 5ire coins to pay the transaction fee';
   const seedUser = mnemonicToMiniSecret(PHRASE);
   const keyring = new Keyring({ type: "ed25519" });
   const userKeyring = keyring.addFromPair(naclKeypairFromSeed(seedUser));
